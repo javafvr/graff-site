@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+
+	<!-- Required meta tags -->
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+	<!-- Bootstrap CSS -->
+	link(rel="stylesheet" href="css/bootstrap.min.css")
+
+	<!-- My CSS -->
+	link(rel="stylesheet" href="css/main.css")
+
+	<!-- Google fonts -->
+	link(href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet")
+
+	title Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72
+
+	script(src='//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+	script(src='//code.jquery.com/jquery-1.11.1.min.js')
+
+	<!-- Fontawesome -->
+	script(defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js")
+
+body
+	.page-header
+		.container
+			.jumbotron.jumbotron-fluid.d-flex.justify-content-between
+				.row  
+					.col-3--left  
+						h4 Открыто 24 часа
+					.col-3
+						img(id="log" src="./img/logo.png" alt="logo" style="width: 200px; height: 200px; object-fit: contain;")
+					.col-3--right 
+						h4 748-440
+
+	header
+		include navigation.pug
+
+	.container
+		h2 Контакты
+		.row
+			.map
+				#map
+					script(defer='', src='./js/map.js')
+					script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&callback=initMap')
+		.row
+			.col-6
+				.address
+					p
+						address ул. Николая Федорова 6/к.1 
+						|625000, Россия Тюмень
+			.col-6
+				.phone
+					p +7(3452)748-440
+					p
+						a(href="contact-form.html") Написать директору
+
+
+	.section-footer
+		.container
+			.footer__social
+					a(href='#', target='_blank')
+						i.fab.fa-instagram
+					a(href='https://vk.com/menclubgraff', target='_blank')
+						i.fab.fa-vk
+			// Yandex.Metrika informer
+			a(href='https://metrika.yandex.ru/stat/?id=48229025&from=informer', target='_blank', rel='nofollow')
+			img(src='https://informer.yandex.ru/informer/48229025/2_0_545A60FF_343A40FF_1_uniques', style='width:80px; height:31px; border:0;', alt='Яндекс.Метрика', title='Яндекс.Метрика: данные за сегодня (уникальные посетители)')
+			// /Yandex.Metrika informer
+	<!-- Optional JavaScript -->
+
+	//- --Yandex metrica
+	script(type='text/javascript', src='/js/yandex.js')
+	noscript
+		div
+			img(src='https://mc.yandex.ru/watch/48229025', style='position:absolute; left:-9999px;', alt='')
+	//- //Yandex metrica
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+	script(src="js/carousel.js")
+
+
+	

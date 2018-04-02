@@ -1,0 +1,11 @@
+script( src="./js/jquery.cookie.js")
+script( src="./js/popup.js")
+#popup__overlay(class="popup__overlay")
+	.popup
+		h1
+			<strong>18</strong>+
+			a(class="close" href="#")
+			.content Материалы для взрослых! Сайт мужского спа салона, который вы собираетесь просмотреть, может содержать материалы, предназначенные только для взрослых. Чтобы продолжить, вы должны подтвердить, что вам уже исполнилось 18 лет..
+				.buttons
+					.button(id="popup__yes" type="submit" onClick="javascript:PopUpHide()") Да мне есть 18
+					.button(id="popup__no" type="submit" onClick="javascript:CloseSite()") Нет мне нет 18 ти
