@@ -2,6 +2,7 @@
 // @import "./fontawesome/less/fontawesome";
 // @import "./fontawesome/less/fa-solid";
 // @import "./fontawesome/less/fa-brands";
+@import "popup.less";
 
 @chocolate: #513745;
 @gray: #343a40;
@@ -15,37 +16,251 @@
 
 body{
 	font-size: 12px;
-	font-color: #fff;
-	background-color: @chocolate;
+    background-color: @chocolate;
     background-image: url(../img/bg_main.png);
     background-repeat: repeat;
-    
+	color: #fff;
+    h2{
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.5), 2px 2px 5px rgba(0,0,0,.4), 3px 3px 10px rgba(0,0,0,.3);
+    }
+}
 
-h2{
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5), 2px 2px 5px rgba(0,0,0,.4), 3px 3px 10px rgba(0,0,0,.3);
+.container{
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    h2{
+        margin-bottom: 3.5rem;    
+    }
+
+    background-color: @chocolate;
+}
+
+// -----------------------------------------------HEADER MOBILE----------------------------------------------- //
+.section-header{
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+        background-color:transparent !important;
+        .row{
+            text-align: center;
+        }
+        .col-3{
+            text-transform: uppercase;
+            min-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo{
+            width: 240px;
+            height:200px;
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+}
+// -----------------------------------------------HEADER MOBILE END----------------------------------------------- //
+
+// -----------------------------------------------CARDS MOBILE----------------------------------------------- //
+.card-deck__masters{
+    .card{
+        color: #fff;
+        background-color: @chocolate;
+        margin-bottom: 50px;
+        
+        .card-img-top{
+            max-height: 100%;
+        }
+
+        .card-body{
+            background-color: @chocolate;
+        }
+    }
+}
+    
+.card-deck__action{
+    .card{
+        color: #fff;
+        background-color: @chocolate;
+        
+        .card-body{
+            display:none;
+        }
+    }
 }
 
 
-// POPUP
+
+
+//TILT GS
+
+// .js-tilt{
+//     display:none;
+// }
+
+.tilt {
+  transform-style: preserve-3d;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+
+  &:hover {
+    
+    .content {
+      transform: translateY(0%) translateX(0%) translateZ(3rem);
+    }
+
+  }
+  
+  .content {
+    position: relative;
+    transform: translateY(0%) translateX(0%) translateZ(1rem);
+    transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s; 
+  }
+
+    &:hover {
+    
+    .content__logo {
+      transform: translateY(20%) translateX(500%) translateZ(3rem);
+        img{
+            width: 27px;
+           
+        }
+    }
+
+  }
+  
+  .content__logo {
+    position: absolute;
+    transform: translateY(20%) translateX(500%) translateZ(1rem);
+    transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s;
+    img{
+        width: 27px;
+    }
+ 
+  }
+}
+
+////TILT JS
+
+
+
+
+
+
+// .content {
+//     position: relative;
+// }
+
+// .content__logo {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     img{
+//         width: 40px;
+//     }
+// }
+
+
+
+
+
+// -----------------------------------------------CARDS MOBILE END----------------------------------------------- //
+
+// -----------------------------------------------FOOTER MOBILE----------------------------------------------- //
+.section-footer{
+    font-size: 23px;
+    .col-3{
+        width: 100%;
+        color: #FFF; 
+        text-transform: uppercase;
+        display: flex;
+        min-width: 100%;
+        margin-bottom: 20px;
+        
+        h4{
+            margin: 0 auto;
+        }
+
+    }
+
+    .col-3--left, .col-3--right{
+        margin: 0 auto;
+    }
+
+    .row{
+        text-align:center;
+        min-width: 100%;
+    }
+
+    .row--yandex{
+        display:none;
+    }
+
+    .footer__social {
+        margin: 0 auto;
+        padding-bottom: 15px;
+        font-size: 42px;
+    }
+
+    .footer__social a {
+        margin-right: 25px;
+        opacity: 0.75;
+        color: #fff;
+    }
+
+    .footer__social a:hover {
+        opacity: 1;
+    }
+
+    #map {
+        width: 345px;
+        height: 300px;
+        background-color: @gray;
+    }
+}
+
+// -----------------------------------------------FOOTER MOBILE END----------------------------------------------- //
+
+// -----------------------------------------------CAROUSEL MOBILE----------------------------------------------- //
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    display: none;
+}
+// -----------------------------------------------CAROUSEL MOBILE END----------------------------------------------- //
+
+
+/* ----------------------------------------------Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* ----------------------------------------------Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 976px) {
+
+// POPUP WINDOW
 .popup__overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  display: none;
-
-
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    display: none;
+    z-index: 100;
 }
 .popup__overlay:target {
-
-  opacity: 1;
+    opacity: 1;
 }
-
 .popup {
     margin: 70px auto;
     padding: 20px;
@@ -93,70 +308,61 @@ h2{
         overflow: auto;
         font-size:35px;
     }
-
-
 }
+// -----------------------------------------------POPUP----------------------------------------------- //
 
 
-// POPUP
-
-
-
-
-
-//HEADER
-	.jumbotron {
-		max-height: 300px;
+// -----------------------------------------------HEADER DESKTOP----------------------------------------------- //
+.section-header{
+    .jumbotron {
+        max-height: 400px;
         margin: 0;
-    	background-color:transparent !important;
+        background-color:transparent !important;
 
-		.row{
-			padding: 20px;
+        .row{
+            padding: 20px;
             min-width:100%;
-			-webkit-justify-content: space-between;
-			        justify-content: space-between;
-		}
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+        }
 
-
-    	.col-3{
-    		-webkit-align-content: center;
-    		        align-content: center;
-    		margin-left: auto;
-    		margin-right: auto;
-    		width:100%;
-    		color: #FFF; 
-    		text-transform: uppercase;
-    	}
-    	.col-3--right{
-    		text-align: right;
-    		color: #FFF;
-    	}
-    		.col-3--left{
-    		text-align: right;
-    		color: #FFF;
-    		text-transform: uppercase;
-    	}
+        .col-3{
+            -webkit-align-content: center;
+                    align-content: center;
+            margin: 0 auto;
+            min-width: 25%;
+            text-transform: uppercase;
+            padding: 20px;
+            color: #FFF; 
+        }
+        .col-3--right{
+            text-align: right;
+            color: #FFF;
+        }
+        .col-3--left{
+            text-align: right;
+            text-transform: uppercase;
+            color: #FFF;
+        }
         
         .button_wrapper{
             
         }
 
         .button {
+            display: inline-block;
+            padding-left: 23px;
+            padding-top: 8px;
+            padding-right: 23px;
+            padding-bottom: 8px;
+            margin-bottom: 13px;
             font-weight: 700;
             text-decoration: none;
-            color: #fff;
             text-transform: uppercase;
             letter-spacing: 1.6px;
-            display: inline-block;
-            border-width: 2px;
-            border-color: #FFF;
-            border-style: solid;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 23px;
-            padding-right: 23px;
-            margin-bottom: 13px;
             transition: 0.2s ease-out;
+            color: #fff;
+            border: 2px solid #fff;
         }
 
         .button:hover {
@@ -165,70 +371,15 @@ h2{
 
             
         }
-	}
-
-}
-
-.logo{
-    width: 200px;
-    height:200px;
-    padding: 0;
-    margin: 0;
-    
+    }
 }
 
 .nav-item{
-	font-size: 20px;
-	text-transform: uppercase;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.tilt {
-  transform-style: preserve-3d;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
 
-  &:hover {
-    
-    .content {
-      transform: translateY(0%) translateX(0%) translateZ(3rem);
-    }
-
-  }
-  
-//TILT GS
-  .content {
-    position: relative;
-    transform: translateY(0%) translateX(0%) translateZ(1rem);
-    transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s; 
-  }
-
-    &:hover {
-    
-    .content__logo {
-      transform: translateY(20%) translateX(500%) translateZ(3rem);
-        img{
-            width: 20px;
-           
-        }
-    }
-
-  }
-  
-  .content__logo {
-
-    position: absolute;
-    transform: translateY(20%) translateX(500%) translateZ(1rem);
-    transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s;
-    img{
-        width: 20px;
-    }
- 
-  }
-}
-
-////TILT JS
 
 .container{
     
@@ -243,7 +394,11 @@ h2{
     background-color: @chocolate;
 }
 
-// BOOTCTRAP CAROUSEL
+// -----------------------------------------------CAROUSEL DESKTOP----------------------------------------------- //
+.carousel-control-next, .carousel-control-prev{
+    display: flex; 
+}
+
 .carousel-inner{
 
     .carousel-item{
@@ -256,10 +411,9 @@ h2{
         h3{
             text-transform: uppercase;
         }
+
         font-size: 20px;
-        margin-left: auto;
-        // margin-right: auto;
-        // margin-top: auto;
+        margin-left: 0 auto;
         margin-bottom: 150px;
         width: 50%;
     }
@@ -267,14 +421,12 @@ h2{
 
     img {
         margin: 0 auto;
-        // min-width: 50%;
         max-height: 50%;
     }
 }
-// BOOTCTRAP CAROUSEL
+// -----------------------------------------------CAROUSEL DESKTOP END----------------------------------------------- //
 
-// BOOTSTRAP CARDS
-
+// -----------------------------------------------CARDS DESKTOP----------------------------------------------- //
 .card-deck__masters{
     .card{
         color: #fff;
@@ -286,7 +438,7 @@ h2{
         }
 
         .card-body{
-            background-color: @chocolate;
+            background-color: #51374500;
         }
     }
 }
@@ -301,7 +453,53 @@ h2{
         }
     }
 }
-////BOOTSTRAP CARDS
+
+.tilt {
+    transform-style: preserve-3d;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+    &:hover {
+        .content {
+            transform: translateY(0%) translateX(0%) translateZ(3rem);
+        }
+    }
+  
+    .content {
+        position: relative;
+        transform: translateY(0%) translateX(0%) translateZ(1rem);
+        transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s; 
+    }
+
+    &:hover {
+
+        .content__logo {
+            transform: translateY(20%) translateX(500%) translateZ(3rem);
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+    .content__logo {
+        position: absolute;
+        // top:0;
+        // right:0;
+        transform: translateY(20%) translateX(500%) translateZ(1rem);
+        transition: transform 1s cubic-bezier(.165,.84,.44,1) 0s;
+        img{
+            width: 20px;
+        }
+    }
+}
+
+////TILT JS
+
+
+
+// -----------------------------------------------CARDS DESKTOP END----------------------------------------------- //
 
 //-------FAQ
 
@@ -310,7 +508,6 @@ h2{
         text-align: center;
         margin-bottom: 30px;
     }
-    
     
     p.question{
         color: #fff;
@@ -333,86 +530,79 @@ h2{
 //-----//FAQ
 
 
-//---------------------------FOOTER-----------------------------------
+// -----------------------------------------------FOOTER DESKTOP----------------------------------------------- //
 .section-footer {
-  background-color: #513745;
-  padding: 50px 40px 30px 40px;
-  color: #FFF;
-  background-color: #343a40;
-  font-weight: 300;
-  line-height: 1.5;
-  display: flex;
-  
-  -webkit-justify-content: space-between;
-  		  justify-content: space-between;
+    display: flex;
+    -webkit-justify-content: space-between;
+          justify-content: space-between;
+    padding: 50px 40px 30px 40px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #FFF;
+    background-color: @gray;
   
     .container{
         background-color: @gray;
     }
   
     .footer__social {
-	  font-size: 42px;
-	  padding-bottom: 15px;
-	}
-	.footer__social a {
-	  opacity: 0.75;
-    color: #fff;
-	  margin-right: 25px;
+        font-size: 42px;
+        padding-bottom: 15px;
+    }
+    .footer__social a {
+        opacity: 0.75;
+        color: #fff;
+        margin-right: 25px;
      
-	}
+    }
 
-	.footer__social a:hover {
-	  opacity: 1;
-	}
+    .footer__social a:hover {
+      opacity: 1;
+    }
 
     address{
-		word-wrap: break-word;
-		font-size: 25px;
-	}
-	.row{
-		-webkit-justify-content: space-between;
-		        justify-content: space-between;
-		min-width: 100%;
-	}
+        word-wrap: break-word;
+        font-size: 25px;
+    }
+    .row{
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        min-width: 100%;
+    }
     
     p {
         line-height: 1.5;
     }
-}
 
+    .col-3{
+        min-width: 25%;
+    }
+}
+// -----------------------------------------------FOOTER DESKTOP END----------------------------------------------- //
+
+// -----------------------------------------------CONTACTS DESKTOP----------------------------------------------- //
 
 #map {
-  width: 400px;
-  height: 400px;
-  background-color: #343a40;
+    width: 1140px;
+    height: 400px;
+    background-color: #343a40;
 }
-
-
 h2{
     text-transform: uppercase;
     color: #FFF;
     
 }
-//---------------------------//FOOTER-----------------------------------
-
-// CONTACTS
-
-.map{
-    min-width: 100%;
-    // margin: 30px;
-}
-
-#map{
-    min-width: 100%;
-}
+// .map{
+//     min-width: 100%;
+// }
 
 .address{
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 26px;
-    margin: 30px;
-    padding: 5px;
-    max-width: 100%;
+ color: #FFF;
+ text-transform: uppercase;
+ font-size: 26px;
+ margin: 30px;
+ padding: 5px;
+ max-width: 100%;
 }
 
 .phone{
@@ -424,91 +614,8 @@ h2{
     padding: 5px;
     max-width: 100%;
 }
-
-
-
-// END CONTACTS
-
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query since this is the default in Bootstrap*/
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 376px) {
-	.jumbotron {
-    	background-color:transparent !important;
-    	.col-3{
-    		width: 100%;
-    		color: #FFF; 
-    		text-transform: uppercase;
-    		display: flex;
-    		white-space: nowrap;
-    		min-width: 100%;
-    		margin-bottom: 20px;
-    		
-    		img{
-    			margin-left: auto;
-    			margin-right: auto;
-
-    		}
-
-    		h4{
-    			margin-left: auto;
-    			margin-right: auto;
-    		}
-    	}
-
-    	.col-3--left, .col-3--right{
-    		margin-left: auto;
-    		margin-right: auto;
-    	}
-	}
-
-	.section-footer{
-		font-size: 24px;
-    	.col-3{
-    		width: 100%;
-    		color: #FFF; 
-    		text-transform: uppercase;
-    		display: flex;
-    		min-width: 100%;
-    		margin-bottom: 20px;
-    		
-    		img{
-    			margin-left: auto;
-    			margin-right: auto;
-
-    		}
-
-    		h4{
-    			margin-left: auto;
-    			margin-right: auto;
-    		}
-    		#map{
-    			max-width: 100%
-    		}
-    	}
-
-    	.col-3--left, .col-3--right{
-    		margin-left: auto;
-    		margin-right: auto;
-    	}
-    	.row{
-
-    		margin-left: auto;
-    		margin-right: auto;
-    		min-width: 100%;
-    	}
-
-    	#map {
-		  width: 300px;
-		  height: 300px;
-		  background-color: #343a40;
-		}
-
+// -----------------------------------------------CONTACTS DESKTOP END----------------------------------------------- //
 }
-
-}
-
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {}
@@ -518,14 +625,14 @@ h2{
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	.navbar{
-		// margin-bottom: 50px;
-	}
+ .navbar{
+  // margin-bottom: 50px;
+ }
 
-	.navbar-nav{
-		margin-left:auto;
-		margin-right:auto;
-	}
+ .navbar-nav{
+ 	margin-left:auto;
+ 	margin-right:auto;
+ }
 
 }
 

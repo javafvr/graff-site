@@ -1,192 +1,185 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head><!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="img/favicon.ico"><!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"><!-- My CSS -->
-  <link rel="stylesheet" href="css/main.css"><!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
-  <title>Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><!-- Fontawesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-</head>
-<body>
-  <script src="./js/jquery.cookie.js"></script>
-  <script src="./js/popup.js"></script>
-  <div class="popup__overlay" id="popup__overlay">
-    <div class="popup">
-      <h1><strong>18</strong>+<a class="close" href="#"></a>
-        <div class="content">Материалы для взрослых! Сайт мужского спа салона, который вы собираетесь просмотреть, может содержать материалы, предназначенные только для взрослых. Чтобы продолжить, вы должны подтвердить, что вам уже исполнилось 18 лет..
-          <div class="buttons">
-            <div class="button" id="popup__yes" type="submit" onClick="javascript:PopUpHide()">Да мне есть 18</div>
-            <div class="button" id="popup__no" type="submit" onClick="javascript:CloseSite()">Нет мне нет 18 ти</div>
-          </div>
-        </div>
-      </h1>
-    </div>
-  </div>
-  <div class="page-header">
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid d-flex justify-content-between">
-        <div class="row"> 
-          <div class="col-3--left"> 
-            <h4>Открыто 24 часа</h4>
-          </div>
-          <div class="col-3">
-            <div class="logo"> <img id="log" src="./img/logo.png" alt="logo" style="width: 200px; height: 200px; object-fit: contain;"></div>
-          </div>
-          <div class="col-3--right"> 
-            <h4>748-440</h4>
-          </div>
-        </div>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72</title>
+    <meta name="keywords" content="отдых, девушки, женщины, мужчины, салон, мужской клуб, отдых для мужчин">
+    <meta name="description" content="Отдых для мужчин">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <meta name="apple-mobile-web-app-title" content="graff72">
+  </head>
+  <body>
+    <div class="frame">
+      <div class="modal"><img src="img/alert.png" width="44" height="38"><span class="title">18+</span>
+        <p>"Приветствуем вас на нашем сайте! Сайт содержит материалы для взрослых и мы должны убедиться что вам есть 18 лет"</p>
+        <div class="button">Да мне есть 18</div>
       </div>
     </div>
-  </div>
-  <header>
-    <!--NAVIGATION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">главная<span class="sr-only" current></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#masters">мастера<span class="sr-only" current></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#programs">программы</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">отзывы</a></li>
-          <li class="nav-item"><a class="nav-link" href="faq.html">faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">контакты</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--NAVIGATION-->
-  </header>
-  <div class="container">
-    <h2>Лучшие программы</h2>
-    <div class="carousel slide" id="programs" data-ride="carousel">
-      <!-- Indicators-->
-      <ul class="carousel-indicators">
-        <li class="active" data-target="#programs" data-slide-to="0"></li>
-        <li data-target="#programs" data-slide-to="1"></li>
-        <li data-target="#programs" data-slide-to="2"></li>
-      </ul>
-      <!-- The slideshow-->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-caption">
-            <h3>50 оттенков серого </h3>
-            <p>Мечтали ли вы оказаться главным героем фильма 50 Оттенков серого? У Вас есть такая возможность.. Тут Вы воплотите все свои фантазии в реальность... Вы будете Господином своей робкой красотки, которая умело будет подчиняться Вам.</p>
-          </div><img src="img/programs/1.jpg" alt="program1">
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption">
-            <h3>твикс</h3>
-            <p>​Это бестселлер! Любите конфетку с начинкой!!! Это чувство когда чувствуется сначала вкус сладкого шоколада плавно переходящий в начинку спелой вишни...эта программа с двумя красотками которые передадут вкус всех ваших изысков и желаний,лучшие техники и разнообразия позволят Вам насладиться вкусом который останется надолго.</p>
-          </div><img src="img/programs/2.jpg" alt="program2">
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption">
-            <h3>персона lux </h3>
-            <p>Трудно выбрать конкретную программу? Хочется всего и сразу? Тогда программа «Персона LUX» удовлетворит все Ваши желания! В ней Вас ждет горячая эротическая смесь из всех эксклюзивных программ, которые выполняет выбранная Вами красотка. Только в этой программе самые лучшие, эксклюзивное, впечатляющие и невероятное, а техника релакса не оставит равнодушным даже самого требовательного Гостя! </p>
-          </div><img src="img/programs/3.jpg" alt="program3">
-        </div>
-      </div>
-      <!-- Left and right controls--><a class="carousel-control-prev" href="#programs" data-slide="prev"><span class="carousel-control-prev-icon"></span></a><a class="carousel-control-next" href="#programs" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-    </div>
-  </div>
-  <!--Лучшие мастера-->
-  <div class="container text-center">
-    <div id="masters"></div>
-    <h2>лучшие мастера</h2>
-    <div class="card-deck card-deck__masters">
-      <div class="card js-tilt tilt" data-tilt-glare="true">
-        <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/1.jpg" alt="offer_1">
-        <div class="card-body content">
-          <h5 class="card-title">Полина</h5>
-          <p class="card-text">Лет: 23, Рост:167, Вес:55, Грудь: 3</p>
-        </div>
-      </div>
-      <div class="card js-tilt tilt" data-tilt-glare="true">
-        <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/2.jpg" alt="offer_2">
-        <div class="card-body content">
-          <h5 class="card-title">Маша</h5>
-          <p class="card-text">Лет: 23, Рост:185, Вес:65, Грудь: 3</p>
-        </div>
-      </div>
-      <div class="card js-tilt tilt" data-tilt-glare="true">
-        <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/3.jpg" alt="offer_3">
-        <div class="card-body content">
-          <h5 class="card-title">Зарина</h5>
-          <p class="card-text">Лет: 21, Рост:156, Вес:43, Грудь: 3</p>
-        </div>
-      </div>
-      <div class="card js-tilt tilt" data-tilt-glare="true">
-        <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/4.jpg" alt="offer_3">
-        <div class="card-body content">
-          <h5 class="card-title">Ирина</h5>
-          <p class="card-text">Лет: 21, Рост:168, Вес:52, Грудь: 2</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Акции-->
-  <div class="container text-center">
-    <h2>наши акции</h2>
-    <div class="card-deck card-deck__action">
-      <div class="card js-tilt"><img class="card-img-top" src="img/offer_1.jpg" alt="offer_1">
-        <div class="card-body">
-          <h5 class="card-title">Подробнее</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-      <div class="card js-tilt"><img class="card-img-top" src="img/offer_2.jpg" alt="offer_2">
-        <div class="card-body">
-          <h5 class="card-title">Подробнее</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-      <div class="card js-tilt"><img class="card-img" src="img/offer_3.jpg" alt="offer_3">
-        <div class="card-body">
-          <h5 class="card-title">Подробнее</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--FOOTER-->
-  <div class="section-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-3--left">
-          <div class="footer__map">
-            <div id="map">
-              <script defer="" src="./js/map.js"></script>
-              <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&amp;callback=initMap"></script>
+    <div class="section-header">
+      <div class="container">
+        <div class="jumbotron jumbotron-fluid d-flex justify-content-between">
+          <div class="row"> 
+            <div class="col-3 col-3--left"> 
+              <h4>Открыто 24 часа</h4>
+            </div>
+            <div class="col-3"><img class="logo" src="./img/logo.png" alt="logo"></div>
+            <div class="col-3 col-3--right"> 
+              <h4>748-440</h4>
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="footer__address">
-            <p>
-              <address>ул. Николая Федорова 6/к.1 625000, Россия Тюмень</address>
-            </p>
+      </div>
+    </div>
+    <header>
+      <!--NAVIGATION-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">главная<span class="sr-only" current></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#masters">мастера<span class="sr-only" current></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#programs">программы</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">отзывы</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">faq</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--NAVIGATION-->
+    </header>
+    <div class="container">
+      <h2>Лучшие программы</h2>
+      <div class="carousel slide" id="programs" data-ride="carousel">
+        <!-- Indicators-->
+        <ul class="carousel-indicators">
+          <li class="active" data-target="#programs" data-slide-to="0"></li>
+          <li data-target="#programs" data-slide-to="1"></li>
+          <li data-target="#programs" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3>50 оттенков серого </h3>
+              <p>Мечтали ли вы оказаться главным героем фильма 50 Оттенков серого? У Вас есть такая возможность.. Тут Вы воплотите все свои фантазии в реальность... Вы будете Господином своей робкой красотки, которая умело будет подчиняться Вам.</p>
+            </div><img src="img/programs/1.jpg" alt="program1">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>твикс</h3>
+              <p>​Это бестселлер! Любите конфетку с начинкой!!! Это чувство когда чувствуется сначала вкус сладкого шоколада плавно переходящий в начинку спелой вишни...эта программа с двумя красотками которые передадут вкус всех ваших изысков и желаний,лучшие техники и разнообразия позволят Вам насладиться вкусом который останется надолго.</p>
+            </div><img src="img/programs/2.jpg" alt="program2">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>персона lux </h3>
+              <p>Трудно выбрать конкретную программу? Хочется всего и сразу? Тогда программа «Персона LUX» удовлетворит все Ваши желания! В ней Вас ждет горячая эротическая смесь из всех эксклюзивных программ, которые выполняет выбранная Вами красотка. Только в этой программе самые лучшие, эксклюзивное, впечатляющие и невероятное, а техника релакса не оставит равнодушным даже самого требовательного Гостя! </p>
+            </div><img src="img/programs/3.jpg" alt="program3">
           </div>
         </div>
-        <div class="col-3--right">
-          <div class="footer__social"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://vk.com/menclubgraff" target="_blank"><i class="fab fa-vk"></i></a></div>
+        <!-- Left and right controls--><a class="carousel-control-prev" href="#programs" data-slide="prev"><span class="carousel-control-prev-icon"></span></a><a class="carousel-control-next" href="#programs" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div id="masters"></div>
+      <h2>лучшие мастера</h2>
+      <div class="card-deck card-deck__masters">
+        <div class="card js-tilt tilt" data-tilt-glare="true">
+          <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/1.jpg" alt="offer_1">
+          <div class="card-body content">
+            <h5 class="card-title">Полина</h5>
+            <p class="card-text">Лет: 23, Рост:167, Вес:55, Грудь: 3</p>
+          </div>
+        </div>
+        <div class="card js-tilt tilt" data-tilt-glare="true">
+          <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/2.jpg" alt="offer_2">
+          <div class="card-body content">
+            <h5 class="card-title">Маша</h5>
+            <p class="card-text">Лет: 23, Рост:185, Вес:65, Грудь: 3</p>
+          </div>
+        </div>
+        <div class="card js-tilt tilt" data-tilt-glare="true">
+          <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/3.jpg" alt="offer_3">
+          <div class="card-body content">
+            <h5 class="card-title">Зарина</h5>
+            <p class="card-text">Лет: 21, Рост:156, Вес:43, Грудь: 3</p>
+          </div>
+        </div>
+        <div class="card js-tilt tilt" data-tilt-glare="true">
+          <div class="content__logo"><img src="img/g_sign.png" alt=""></div><img class="card-img-top" src="img/masters/4.jpg" alt="offer_3">
+          <div class="card-body content">
+            <h5 class="card-title">Ирина</h5>
+            <p class="card-text">Лет: 21, Рост:168, Вес:52, Грудь: 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h2>наши акции</h2>
+      <div class="card-deck card-deck__action">
+        <div class="card js-tilt tilt"><img class="card-img-top" src="img/offer_1.jpg" alt="offer_1">
+          <div class="card-body">
+            <h5 class="card-title">Подробнее</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card js-tilt tilt"><img class="card-img-top" src="img/offer_2.jpg" alt="offer_2">
+          <div class="card-body">
+            <h5 class="card-title">Подробнее</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card js-tilt tilt"><img class="card-img" src="img/offer_3.jpg" alt="offer_3">
+          <div class="card-body">
+            <h5 class="card-title">Подробнее</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-3--left">
+            <div class="section-footer_map">
+              <div id="map">
+                <script defer="" src="./js/map.js"></script>
+                <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&amp;callback=initMap"></script>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer__address">
+              <p>
+                <address>ул. Николая Федорова 6/к.1 625000, Россия Тюмень</address>
+              </p>
+            </div>
+          </div>
+          <div class="col-3 col-3--right">
+            <div class="footer__social"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://vk.com/menclubgraff" target="_blank"><i class="fab fa-vk"></i></a></div>
+          </div>
+        </div>
+        <div class="row row--yandex">
           <!-- Yandex.Metrika informer--><a href="https://metrika.yandex.ru/stat/?id=48229025&amp;from=informer" target="_blank" rel="nofollow"></a><img src="https://informer.yandex.ru/informer/48229025/2_0_545A60FF_343A40FF_1_uniques" style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)">
           <!-- /Yandex.Metrika informer-->
         </div>
       </div>
-    </div>
-  </div>
-  <!--//FOOTER--><!-- Optional JavaScript -->
-  <script type="text/javascript" src="/js/yandex.js"></script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/48229025" style="position:absolute; left:-9999px;" alt=""></div>
-  </noscript><!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="/libs/tilt.js-master/tilt.jquery.js"></script>
-  <script src="/js/tilt.js"></script>
-</body>
+    </div><!-- Optional JavaScript -->
+    <script type="text/javascript" src="/js/yandex.js"></script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/48229025" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <script src="/libs/tilt.js-master/tilt.jquery.js"></script>
+    <script src="/js/tilt.js"></script>
+  </body>
+</html>

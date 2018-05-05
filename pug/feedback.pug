@@ -1,39 +1,40 @@
-<!DOCTYPE html>
-html(lang="en")
-head
+doctype html
+html(lang="ru")
+	head
+		//- Required meta tags
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 
-	<!-- Required meta tags -->
-	meta(charset="utf-8")
-	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		//- Titles
+		title Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72
+		meta(name="keywords" content="отдых, девушки, женщины, мужчины, салон, мужской клуб, отдых для мужчин")
+		meta(name="description" content="Отдых для мужчин")
 
-	<!-- Bootstrap CSS -->
-	link(rel="stylesheet" href="css/bootstrap.min.css")
+		//- CSS
+		link(rel="stylesheet" href="css/normalize.css")
+		link(rel="stylesheet" href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="css/main.css")
 
-	<!-- My CSS -->
-	link(rel="stylesheet" href="css/main.css")
+		//- Google fonts
+		link(href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet")
 
-	<!-- Google fonts -->
-	link(href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet")
+		//- Favicons
+		link(rel="shortcut icon", href="img/favicon.ico")
+		link(rel="apple-touch-icon" sizes="180x180" href="img/logo.png")
+		meta(name = "apple-mobile-web-app-title" content = "graff72")
 
-	title Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72
-
-	script(src='//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
-	script(src='//code.jquery.com/jquery-1.11.1.min.js')
-
-	<!-- Fontawesome -->
-	script(defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js")
-
-body
-	.page-header
-		.container
-			.jumbotron.jumbotron-fluid.d-flex.justify-content-between
-				.row  
-					.col-3--left  
-						h4 Открыто 24 часа
-					.col-3
-						img(id="log" src="./img/logo.png" alt="logo" style="width: 200px; height: 200px; object-fit: contain;")
-					.col-3--right 
-						h4 748-440
+	body
+		include adult_popup2
+		.section-header
+			.container
+				.jumbotron.jumbotron-fluid.d-flex.justify-content-between
+					.row  
+						.col-3.col-3--left  
+							h4 Открыто 24 часа
+						.col-3
+							img(class="logo" src="./img/logo.png" alt="logo")
+						.col-3.col-3--right 
+							h4 748-440
 	header
 		include navigation.pug
 
