@@ -9,7 +9,7 @@ gulp.task("server", ['less','pug'],function () {
 	browserSync.init({
 		server: { baseDir: './docs' }
 	});
-      gulp.watch('**/*.html').on('change', browserSync.reload);
+      gulp.watch('./docs**/*.html').on('change', browserSync.reload);
 	gulp.watch('js/**/*.js').on('change', browserSync.reload);
       gulp.watch('less/**/*.less', ['less'] );
       gulp.watch('pug/**/*.pug', ['pug'] );

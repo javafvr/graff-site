@@ -1,21 +1,44 @@
 //NAVIGATION
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon 
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
-      li.nav-item
-        a.nav-link(href='index.html') главная
-          span.sr-only(current)
-      li.nav-item
-        a.nav-link(href='#masters') мастера
-          span.sr-only(current)
-      li.nav-item
-        a.nav-link(href='#programs') программы
-      li.nav-item
-        a.nav-link(href='feedback.html') отзывы
-      li.nav-item
-        a.nav-link(href='faq.html') faq
-      li.nav-item
-        a.nav-link(href='contacts.html') контакты
-//NAVIGATION
+nav
+  a#pull(href='#').mobile-nav
+    | Навигация
+    .nav_mobile-head__icon
+      span
+      span
+      span
+  ul#nav_mobile-list
+    li
+      a(href='#') Главная
+    li
+      a(href='#programs') Программы
+    li
+      a(href='#masters') Мастера
+    li
+      a(href='#faq') FAQ
+    li
+      a(href='#') О нас
+    li
+      a(href='#footer') Контакты
+//NAVIGATION END
+
+//- //NAVIGATION
+//- nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+//-   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+//-     span.navbar-toggler-icon 
+//-   #navbarSupportedContent.collapse.navbar-collapse
+//-     ul.navbar-nav.mr-auto
+//-       li.nav-item
+//-         a.nav-link(href='index.html') главная
+//-           span.sr-only(current)
+//-       li.nav-item
+//-         a.nav-link(href='#masters') мастера
+//-           span.sr-only(current)
+//-       li.nav-item
+//-         a.nav-link(href='#programs') программы
+//-       li.nav-item
+//-         a.nav-link(href='feedback.html') отзывы
+//-       li.nav-item
+//-         a.nav-link(href='faq.html') faq
+//-       li.nav-item
+//-         a.nav-link(href='contacts.html') контакты
+//- //NAVIGATION

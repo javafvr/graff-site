@@ -1,24 +1,36 @@
 //FOOTER
-.section-footer
-	.container
+.container#footer
+	.footer.section
+	
 		.row
-			.col-3--left
+			.col-lg-4
 				.footer__map
 					#map
 						script(defer='', src='./js/map.js')
 						script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&callback=initMap')
-			.col-3
+			.col-lg-4
 				.footer__address
 					p
 						address ул. Николая Федорова 6/к.1 625000, Россия Тюмень
-			.col-3--right
-				.footer__social
-					a(href='#', target='_blank')
-						i.fab.fa-instagram
-					a(href='https://vk.com/menclubgraff', target='_blank')
-						i.fab.fa-vk
+			.col-lg-4
+				.wrapper-column
+					.social
+						.social__title Мы в соцсетях:
+						a(href='#', target='_blank')
+							i.fa.fa-instagram
+						a(href='https://vk.com/menclubgraff', target='_blank')
+							i.fa.fa-vk
+					.payment-info
+						.payment-info__title Принимаем к оплате:
+						.payment-info__icons
+							i.fa.fa-cc-mastercard
+							i.fa.fa-cc-visa
+
+		.row
+			.copyright © graff72 2018
 				// Yandex.Metrika informer
 				a(href='https://metrika.yandex.ru/stat/?id=48229025&from=informer', target='_blank', rel='nofollow')
 				img(src='https://informer.yandex.ru/informer/48229025/2_0_545A60FF_343A40FF_1_uniques', style='width:80px; height:31px; border:0;', alt='Яндекс.Метрика', title='Яндекс.Метрика: данные за сегодня (уникальные посетители)')
 				// /Yandex.Metrika informer
+
 ////FOOTER

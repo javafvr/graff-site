@@ -5,7 +5,12 @@ script( src="./js/popup.js")
 		h1
 			<strong>18</strong>+
 			a(class="close" href="#")
-			.content Материалы для взрослых! Сайт мужского спа салона, который вы собираетесь просмотреть, может содержать материалы, предназначенные только для взрослых. Чтобы продолжить, вы должны подтвердить, что вам уже исполнилось 18 лет..
+			.content Вам есть 18 лет?
+			p На сайте присутствует контент эротического содержания
+			ul
+				li Вход только от 18+
+				li Лица в состоянии алкогольного опьянения в салон не допускаются
+				li Салон Graff 72 не оказывает услуг сексуального характера
 				.buttons
-					.button(id="popup__yes" type="submit" onClick="javascript:PopUpHide()") Да мне есть 18
-					.button(id="popup__no" type="submit" onClick="javascript:CloseSite()") Нет мне нет 18 ти
+					.button(id="popup__yes" type="submit" onClick="javascript:PopUpHide()") Да
+					.button(id="popup__no" type="submit" onClick="javascript:CloseSite()") Нет
