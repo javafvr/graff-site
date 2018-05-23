@@ -1,17 +1,19 @@
-.header{
+.hero-header{
+	margin: 0;
+	padding-bottom: 25px;
 	position: relative;
-	width: 100%;
+	// min-width: 100%;
+	// height:560px;
 	font-size: 28px;
-	
+	background-image: url("../img/bg_hero.jpg");
+	background-position: left;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 	color: #FFF;
-	margin-top: 50px;
-	padding: 40px 20px 140px;
-	
+	padding: 60px 20px 140px;
 	font-weight: bold;
-	background-image: -webkit-linear-gradient(205deg, #513745 55%, rgba(81, 55, 69, 0.65) 100%);
-	background-image: -o-linear-gradient(205deg, #513745 55%, rgba(81, 55, 69, 0.65) 100%);
-	background-image: linear-gradient(295deg, #513745 55%, rgba(81, 55, 69, 0.65) 100%);
-	// box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 1);
 	
 	@media (min-width:768px){
 		margin-top: 0;
@@ -20,49 +22,70 @@
 
 	@media (min-width:992px){
 		margin-top: 0;
-		max-width: 992px;
-		margin: 0 auto;
+		height: 960px;
+		// max-width: 992px;
+		// margin: 0 auto;
 		
 	}
 	
 	@media (min-width:1200px){
-		max-width: 1140px;
-		
+		height: 960px;
 		padding: 50px 0;
-		// max-width: 960px;
 		font-size: 33px;
 	}
 	
 }
 
-.header__phone{
-	padding: 15px;
-	text-align: center;
-	// display: inline-block;
-	margin: 0 auto;
+.hero-header__content{
+	height: 95%;
+	// margin-top: 100px;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-align-items: center;
+	        align-items: center;
+
+
+
+	// @media (min-width: 992px){
+		
+	// }
+	
+}
+
+
+.hero-header__phone{
+	display: block;
+	padding: 40px;
+	margin-bottom: 100px;
 	.fa{
 		margin-right: 15px;
 	}
 
 	a{
-		text-decoration: none;
-		color: #FFF;
-	}
+	 	text-decoration: none;
+	 	color: #FFF;
+	 }
 
-	@media (min-width:1200px){
-		text-align: right;
+	// @media (min-width:1200px){
+	// 	// text-align: right;
 		padding: 15px;
-	}
+	// }
 
 }
 
 
 .header__info{
-	text-align: center;
+	// // text-align: center;
 	padding: 15px;
-	@media (min-width:1200px){
-		text-align: left;
-	}
+	// // margin: 0 auto;
+	
+	// @media (min-width:1200px){
+	// 	// text-align: left;
+	// }
 }
 
 

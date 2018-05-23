@@ -18,33 +18,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div class="row"> 
-      <div class="col-md-4 col-lg-4">
-        <div class="header__info">Открыто 24 часа</div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="logo js-parent js-tilt"><img id="logo" src="./img/logo.png" alt="logo"></div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="header__phone"><a href="tel:+7(3452)748-440" target="_blank"> <i class="fa fa-phone" aria-hidden="true"></i>748-440</a></div>
-      </div>
-    </div><a class="scroll-down" href="#programs"></a>
+  <div class="hero-header mb-5">
+    <!--NAVIGATION-->
+    <nav><a class="mobile-nav" id="pull" href="#">Навигация
+        <div class="nav_mobile-head__icon"><span></span><span></span><span></span></div></a>
+      <ul id="nav_mobile-list">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#programs">Программы</a></li>
+        <li><a href="#masters">Мастера</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#footer">Контакты</a></li>
+      </ul>
+    </nav>
+    <!--NAVIGATION END-->
+    <div class="hero-header__content">
+      <div class="header__info">Открыто 24 часа</div>
+      <div class="logo"><img id="logo" src="./img/logo.png" alt="logo"></div>
+      <div class="hero-header__phone"><a href="tel:+7(3452)748-440" target="_blank"> <i class="fa fa-phone" aria-hidden="true"></i>748-440</a></div><a class="scroll-down" href="#programs"></a>
+    </div>
   </div>
-  <!--NAVIGATION-->
-  <nav><a class="mobile-nav" id="pull" href="#">Навигация
-      <div class="nav_mobile-head__icon"><span></span><span></span><span></span></div></a>
-    <ul id="nav_mobile-list">
-      <li><a href="#">Главная</a></li>
-      <li><a href="#programs">Программы</a></li>
-      <li><a href="#masters">Мастера</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#">О нас</a></li>
-      <li><a href="#footer">Контакты</a></li>
-    </ul>
-  </nav>
-  <!--NAVIGATION END-->
-  <div class="container">
+  <div class="container-fluid mb-5">
     <div class="slider text-center">
       <div class="heading" id="programs">Лучшие программы</div>
       <div class="owl-carousel">
@@ -100,47 +94,47 @@
     </div>
     <!--Лучшие мастера-->
   </div>
-  <div class="container text-center">
+  <div class="container text-center mb-5">
     <div class="heading">Лучшие мастера</div>
     <div class="section" id="masters">
       <div class="row">
         <div class="col-md-4 col-lg-3">
-          <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/1.jpg" alt="offer_1">
-            <div class="content">
-              <div class="master-item__title">Полина</div>
-              <div class="master-item__text">Лет: 23, Рост:167, Вес:55, Грудь: 3</div>
+            <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/1.jpg" alt="Полина">
+              <div class="content">
+                <div class="master-item__title">Полина</div>
+                <div class="master-item__text">Лет: 23, Рост: 167, Вес: 55, Грудь: 3</div>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-md-4 col-lg-3">
-          <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/2.jpg" alt="offer_1">
-            <div class="content">
-              <div class="master-item__title">Маша</div>
-              <div class="master-item__text">Лет: 23, Рост:185, Вес:65, Грудь: 3</div>
+            <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/2.jpg" alt="Маша">
+              <div class="content">
+                <div class="master-item__title">Маша</div>
+                <div class="master-item__text">Лет: 23, Рост: 185, Вес: 65, Грудь: 3</div>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-md-4 col-lg-3">
-          <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/3.jpg" alt="offer_1">
-            <div class="content">
-              <div class="master-item__title">Зарина</div>
-              <div class="master-item__text">Лет: 21, Рост:156, Вес:43, Грудь: 3</div>
+            <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/3.jpg" alt="Зарина">
+              <div class="content">
+                <div class="master-item__title">Зарина</div>
+                <div class="master-item__text">Лет: 21, Рост: 156, Вес: 43, Грудь: 3</div>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-md-4 col-lg-3">
-          <div class="master-item master-item--last js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/4.jpg" alt="offer_1">
-            <div class="content">
-              <div class="master-item__title">Ирина</div>
-              <div class="master-item__text">Лет: 21, Рост:168, Вес:52, Грудь: 2</div>
+            <div class="master-item js-parent js-tilt tilt" data-tilt-glare="true"><img src="img/masters/4.jpg" alt="Ирина">
+              <div class="content">
+                <div class="master-item__title">Ирина</div>
+                <div class="master-item__text">Лет: 21, Рост: 168, Вес: 52, Грудь: 2</div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
   <!--Акции-->
-  <div class="container text-center">
+  <div class="container text-center mb-5">
     <div class="heading">Hаши акции</div>
     <div class="row">
       <div class="col-md-4 col-lg-4">
@@ -154,7 +148,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container mb-5">
     <div class="faq" id="faq">
       <div class="heading">Ответы на наиболее частые вопросы</div>
       <div class="faq-item clearfix">
@@ -190,40 +184,41 @@
     </div>
   </div>
   <!--FOOTER-->
-  <div class="container" id="footer">
-    <div class="footer section">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer__map">
-            <div id="map">
-              <script defer="" src="./js/map.js"></script>
-              <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&amp;callback=initMap"></script>
+  <div class="container-fluid" id="footer">
+    <div class="row">
+      <div class="footer section">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer__map">
+              <div id="map">
+                <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt844zHM-r-HrH9M7_5GINiG3Ner6uAmU&amp;callback=initMap"></script>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer__address">
+              <p>
+                <address>ул. Николая Федорова 6/к.1 625000, Россия Тюмень</address>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="wrapper-column">
+              <div class="social">
+                <div class="social__title">Мы в соцсетях:</div><a href="#" target="_blank"><i class="fa fa-instagram"></i></a><a href="https://vk.com/menclubgraff" target="_blank"><i class="fa fa-vk"></i></a>
+              </div>
+              <div class="payment-info">
+                <div class="payment-info__title">Принимаем к оплате:</div>
+                <div class="payment-info__icons"><i class="fa fa-cc-mastercard"></i><i class="fa fa-cc-visa"></i></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="footer__address">
-            <p>
-              <address>ул. Николая Федорова 6/к.1 625000, Россия Тюмень</address>
-            </p>
+        <div class="row">
+          <div class="copyright">© graff72 2018
+            <!-- Yandex.Metrika informer--><a href="https://metrika.yandex.ru/stat/?id=48229025&amp;from=informer" target="_blank" rel="nofollow"></a><img src="https://informer.yandex.ru/informer/48229025/2_0_545A60FF_343A40FF_1_uniques" style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)">
+            <!-- /Yandex.Metrika informer-->
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="wrapper-column">
-            <div class="social">
-              <div class="social__title">Мы в соцсетях:</div><a href="#" target="_blank"><i class="fa fa-instagram"></i></a><a href="https://vk.com/menclubgraff" target="_blank"><i class="fa fa-vk"></i></a>
-            </div>
-            <div class="payment-info">
-              <div class="payment-info__title">Принимаем к оплате:</div>
-              <div class="payment-info__icons"><i class="fa fa-cc-mastercard"></i><i class="fa fa-cc-visa"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="copyright">© graff72 2018
-          <!-- Yandex.Metrika informer--><a href="https://metrika.yandex.ru/stat/?id=48229025&amp;from=informer" target="_blank" rel="nofollow"></a><img src="https://informer.yandex.ru/informer/48229025/2_0_545A60FF_343A40FF_1_uniques" style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)">
-          <!-- /Yandex.Metrika informer-->
         </div>
       </div>
     </div>
@@ -237,7 +232,8 @@
   <script src="/libs/tilt.js-master/tilt.jquery.js"></script>
   <script src="/js/tilt.js"></script>
   <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
-  <script src="libs/owlcarousel2/owl.carousel.min.js"></script><!-- My scripts -->
+  <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+  <script defer="" src="./js/map.js"></script><!-- My scripts -->
   <script src="/js/navigation.js"></script>
   <script src="/js/main.js"></script>
 </body>
