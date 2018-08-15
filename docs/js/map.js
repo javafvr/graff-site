@@ -1,9 +1,18 @@
 function initMap(){
-		var main_color = '#513745';
-		var uluru = {lat: 57.1226, lng: 65.5672};
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 17,
-			center: uluru,
+	var tyumen = {lat: 57.122930, lng: 65.566145};
+	var isDraggable;
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		isDraggable = false;
+	} else{
+		isDraggable = true;
+	}
+	var main_color = '#513745';
+	var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 18,
+			center: tyumen,
+			draggable:isDraggable,
+			disableDefaultUI:true,
+			scrollwheel: false,
 			mapTypeControl: false,
 			styles: [
 						{
@@ -125,8 +134,26 @@ function initMap(){
 											"elementType": "labels.text.stroke",
 											"stylers": [{"color": "#17263c"}]
 										}]});
-										var marker = new google.maps.Marker({
-											position: uluru,
-											map: map
-										});
-	}
+	var marker = new google.maps.Marker({
+		position: tyumen,
+		map: map,
+		title: 'Тюмень',
+		icon: '/img/g_sign.png'
+	});
+	var contentStringTyumen = '<div id="content" class="map-notice">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="heading">Тюмень</h1>'+
+	      '<div id="bodyContent" class="map-notice__body">'+
+	      '<p>ул. Николая Федорова 6/к.1<br>' +
+	      'Тюмень, Россия  625000</p>'+
+	      '</div>'+
+	      '</div>';
+	var infowindowTyumen = new google.maps.InfoWindow({
+		content: contentStringTyumen,
+		maxWidth: 400
+	});
+	marker.addListener('click', function() {
+		infowindowTyumen.open(map, marker);
+	});
+};

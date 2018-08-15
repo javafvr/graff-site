@@ -2,15 +2,21 @@
 script( src="./js/popup.js")
 #popup__overlay(class="popup__overlay")
 	.popup
-		h1
-			<strong>18</strong>+
-			a(class="close" href="#")
-			.content Вам есть 18 лет?
-			p На сайте присутствует контент эротического содержания
-			ul
-				li Вход только от 18+
-				li Лица в состоянии алкогольного опьянения в салон не допускаются
-				li Салон Graff 72 не оказывает услуг сексуального характера
-				.buttons
-					.button(id="popup__yes" type="submit" onClick="javascript:PopUpHide()") Да
-					.button(id="popup__no" type="submit" onClick="javascript:CloseSite()") Нет
+		.popup-text
+			.popup-text__title.pink.blink
+				h1 Добро пожаловать
+			h1 Вам есть 18 лет?
+			div
+				ul
+					li 
+						p На сайте присутствует контент эротического содержания
+					li 
+						p Вход только от 18+
+					li 
+						p Лица в состоянии алкогольного опьянения в салон не допускаются
+					li 
+						p Салон Graff 72 не оказывает услуг сексуального характера
+		.buttons
+			.button(id="PopUpYes") 
+				p Да мне есть 18
+			//- .button(id="no" type="submit" onClick="javascript:CloseSite()") Нет

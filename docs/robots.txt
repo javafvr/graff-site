@@ -1,0 +1,9 @@
+Host: https://graff72.ru
+
+User-agent: YandexBot
+Disallow: /*id=
+Disallow: /js
+Disallow: /css
+Disallow: /libs
+Allow: *index.xml
+Sitemap: https://graff72.ru/sitemap/index.xml
