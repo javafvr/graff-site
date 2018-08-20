@@ -1,10 +1,14 @@
 .footer{
+	width: 100%;
 	padding: 20px;
-	background-color: @gray;
+	background-color: @color3;
+	color: @color4;
 	// height: 400px;
 	font-size: 16px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5), 2px 2px 5px rgba(0,0,0,.4), 3px 3px 10px rgba(0,0,0,.3);
 }
+
+
 
 .wrapper-column{
 	min-height: 100%;
@@ -14,12 +18,16 @@
 	        justify-content: space-around;
 	-webkit-align-items: stretch;
 	        align-items: stretch;
+	@media (min-width: 1200px){
+		// flex-direction: row;
+		
+	}
 }
 
 #map{
 	margin: 0 auto;
 	height: 250px;
-	width: 250px;
+	max-width: 320px;
 	
 	@media (min-width:768px){
 		width: 100%;
@@ -29,13 +37,13 @@
 	@media (min-width:1200px){
 	margin: 0;
 	height: 300px;
-	width: 300px;
+	// width: 300px;
 		
 	}
 }
 
 .social{
-	color: #FFF;
+	color: @color4;
 	font-size: 36px;
 	text-align: center;
 	.social__title{
@@ -51,9 +59,11 @@
 	
 	.fa{
 		padding: 10px;
-		color: #FFF;
+		color: @color4;
+		transition: color 1s ease-in-out;
+		
 		&:hover{
-			color: red;
+			color: @hoverColor;
 		}
 	}
 }
@@ -62,16 +72,42 @@
 	font-size: 20px;
 	font-weight: bold;
 	padding: 20px;
-	color: #FFF;
+	text-align:center;
+	a{
+		text-decoration: none;
+		
+		color: @color4;
+
+		transition: color 1s ease-in-out;
+
+		&:hover{
+			color: @hoverColor;
+		}
+		
+	}
 	
 }
 
 .copyright{
+	p, a{
+		transition: color 1s ease-in-out;
+		text-decoration: none;
+		color: @color4;
+	}
+
+	a{
+		&:hover{
+			color: @hoverColor;
+		}
+	}
+
+	.fa.fa-heart{
+		color:@hoverColor;
+	}
 	min-width: 100%;
 	display: flex;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
-	padding: 20px;
-	color: #FFF;
+	// padding: 20px;
 }
 

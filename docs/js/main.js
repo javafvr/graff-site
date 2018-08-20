@@ -5,12 +5,24 @@ $(document).ready(function() {
 		offset: 30
 	});
 
-
 	$('.owl-carousel').owlCarousel({
-		items:1,
 		loop:true,
-		margin:40,
-		nav:false
+		margin:0,
+		responsive:{
+        0:{
+            items: 1,
+            nav:false
+        },
+        768:{
+            items: 2,
+            nav:false
+        },
+        992:{
+            items: 4,
+
+            nav:true
+        }
+    }
 	});
 
 	toggleTilt();

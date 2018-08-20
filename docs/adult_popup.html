@@ -1,20 +1,30 @@
-
-<script src="./js/jquery.cookie.js"></script>
 <script src="./js/popup.js"></script>
 <div class="popup__overlay" id="popup__overlay">
-  <div class="popup">
-    <h1><strong>18</strong>+<a class="close" href="#"></a>
-      <div class="content">Вам есть 18 лет?</div>
-      <p>На сайте присутствует контент эротического содержания</p>
-      <ul>
-        <li>Вход только от 18+</li>
-        <li>Лица в состоянии алкогольного опьянения в салон не допускаются</li>
-        <li>Салон Graff 72 не оказывает услуг сексуального характера</li>
-        <div class="buttons">
-          <div class="button" id="popup__yes" type="submit" onClick="javascript:PopUpHide()">Да</div>
-          <div class="button" id="popup__no" type="submit" onClick="javascript:CloseSite()">Нет</div>
-        </div>
-      </ul>
-    </h1>
-  </div>
+	<div class="popup">
+		<div class="popup-text">
+			<div class="popup-text__title pink blink">
+				<h1>Добро пожаловать</h1>
+			</div>
+			<h1>Вам есть 18 лет?</h1>
+			<div>
+				<ul>
+					<li>
+						<p>На сайте присутствует контент эротического содержания</p>
+					</li>
+					<li>
+						<p>Вход только от 18+</p>
+					</li>
+					<li>
+						<p>Лица в состоянии алкогольного опьянения в салон не допускаются</p>
+					</li>
+					<li>
+						<p>Салон Graff 72 не оказывает услуг сексуального характера</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="button button--popup" id="PopUpYes">Да мне есть 18</div>
+		</div>
+	</div>
 </div>

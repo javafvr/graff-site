@@ -1,162 +1,116 @@
-doctype html
-html(lang="ru")
-head
-	<!-- Required meta tags -->
-	meta(charset="utf-8")
-	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-	
-	link(rel="shortcut icon", href="img/favicon.ico")
-		
-	<!-- Bootstrap CSS -->
-	link(rel="stylesheet" href="css/bootstrap.min.css")
-	link(rel="stylesheet", href="fonts/noto-webfont/noto.css")
-	//link(rel="stylesheet", href="fonts/notoserif/notoserif.css")
-	link(rel="stylesheet", href="fonts/font-awesome/css/font-awesome.css")
+include _head.pug
+include mixins/_master.pug
+include mixins/_service.pug
+include hero-header.pug
 
-	<!-- Owl carousel 2.3.3 -->
-	link(rel="stylesheet", href="libs/owlcarousel2/owl.carousel.min.css")
-	//- link(rel="stylesheet", href="libs/owlcarousel2/owl.theme.default.min.css")
-	
-	link(rel="stylesheet", href="fonts/font-awesome/css/font-awesome.css")
-
-	<!-- My CSS -->
-	link(rel="stylesheet" href="css/main.css")
-
-	<!-- Google fonts -->
-	link(href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet")
-
-	title Отдых для мужчин | Тюменская обл. | Мужской SPA салон Graff72
-
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
-	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
-body
-	.header
-		.row  
-			.col-md-4.col-lg-4
-				.header__info Открыто 24 часа
-			.col-md-4.col-lg-4
-				.logo.js-parent.js-tilt
-					img(id="logo" src="./img/logo.png" alt="logo")
-			.col-md-4.col-lg-4
-				.header__phone
-					a(href="tel:+7(3452)748-440" target="_blank") 
-						i(aria-hidden="true").fa.fa-phone
-						|748-440
-		a(href="#programs").scroll-down
-	include navigation.pug
-	.container
-		.slider.text-center
-			.heading#programs Лучшие программы
+.section-services
+	.container#programs.p-0
+		.slider
 			.owl-carousel
 				.row
-					.col-md-12.col-lg-8.offset-lg-2.item
-						.d-none.d-md-block
-							.slider-text
-								.slider-text__title 50 оттенков серого
-								.slider-text__descr Мечтали ли вы оказаться главным героем фильма 50 Оттенков серого? У Вас есть такая возможность.. Тут Вы воплотите все свои фантазии в реальность... Вы будете Господином своей робкой красотки, которая умело будет подчиняться Вам.
-						.d-block.d-md-none
-							.slider-text
-								.slider-text__title 50 оттенков серого
-								.slider-text__descr Вы будете Господином своей робкой красотки.
+					.col.item
+						+service('Пьянящие ножки', 'img/1067621573.jpg', [60,4000])
+							.intro Большинство мужчин теряют голову от красивых женских ножек и эта программа специально для них.
+				.row
+					.col.item
+						+service('Французский поцелуй', 'img/-627637893.jpg', [60,6000])
+							.intro Волнующее сочетание техник горячего-холодного дыхания и лёгких прикосновений кубиком льда к вашим эрогенным зонам подарит вам ураган совершенно новых незабываемых эмоций.
+				.row
+					.col.item
+						+service('1000 поцелуев', 'img/1057896424.jpg', [60,7500])
+							.intro Нежные сладкие губки очаровательной мастерицы покроют всё ваше тело ласковыми поцелуями.
+				.row
+					.col.item
+						+service('Кисуля «Kiss»', 'img/small-461993865.jpg', [60,7000])
+							.intro Любите наблюдать за девушкой, когда ей безумно хорошо и сами кайфуете от этого? Тогда эта программа безусловно для вас...
+				.row
+					.col.item
+						+service('Черный закат', 'img/-627637893.jpg', [60,9000])
+							.intro Приглашаем вас в апартаменты, где царит полная темнота, обостряющая чувствительность всех ваших эрогенных зон.
+				.row
+					.col.item
+						+service('Виртуальная реальность', 'img/-102894958.jpg', [60,10500])
+							.intro Специально для любителей &quot;остренького&quot;! Экстремальные смелые техники, минимум касаний руками...
 
-						img(src='img/programs/1.jpg', alt='program1')
-				.row
-					.col-md-12.col-lg-8.offset-lg-2.item
-						.d-none.d-md-block
-							.slider-text
-								.slider-text__title твикс
-								.slider-text__descr Это бестселлер! Любите конфетку с начинкой!!! Это чувство когда чувствуется сначала вкус сладкого шоколада плавно переходящий в начинку спелой вишни...эта программа с двумя красотками которые передадут вкус всех ваших изысков и желаний,лучшие техники и разнообразия позволят Вам насладиться вкусом который останется надолго.
-						.d-block.d-md-none
-							.slider-text
-								.slider-text__title твикс
-								.slider-text__descr Это бестселлер! Эта программа с двумя красотками, которые передадут вкус всех ваших изысков и желаний.
-						img(src='img/programs/2.jpg', alt='program2')
-				.row
-					.col-md-12.col-lg-8.offset-lg-2.item
-						.d-none.d-md-block
-							.slider-text
-								.slider-text__title персона lux
-								.slider-text__descr Трудно выбрать конкретную программу? Хочется всего и сразу? Тогда программа «Персона LUX» удовлетворит все Ваши желания! В ней Вас ждет горячая эротическая смесь из всех эксклюзивных программ, которые выполняет выбранная Вами красотка. Только в этой программе самые лучшие, эксклюзивное, впечатляющие и невероятное, а техника релакса не оставит равнодушным даже самого требовательного Гостя!
-						.d-block.d-md-none
-							.slider-text
-								.slider-text__title персона lux
-								.slider-text__descr Трудно выбрать конкретную программу? Эта программа удовлетворит все Ваши желания! Горячая эротическая смесь из всех эксклюзивных программ. Не оставит равнодушным даже самого требовательного Гостя!
-						img(src='img/programs/2.jpg', alt='program2')
-		//Лучшие мастера
+//- .section-services
+//- 	.container
+//- 		.slider.text-center
+//- 			.heading#programs Лучшие программы
+//- 			.owl-carousel
+//- 				.row
+//- 					.col-md-12.col-lg-8.offset-lg-2.item
+//- 						.d-none.d-md-block
+//- 							.slider-text
+//- 								.slider-text__title 50 оттенков серого
+//- 								.slider-text__descr Мечтали ли вы оказаться главным героем фильма 50 Оттенков серого? У Вас есть такая возможность.. Тут Вы воплотите все свои фантазии в реальность... Вы будете Господином своей робкой красотки, которая умело будет подчиняться Вам.
+//- 						.d-block.d-md-none
+//- 							.slider-text
+//- 								.slider-text__title 50 оттенков серого
+//- 								.slider-text__descr Вы будете Господином своей робкой красотки.
+
+//- 						img(src='img/programs/1.jpg', alt='program1')
+//- 				.row
+//- 					.col-md-12.col-lg-8.offset-lg-2.item
+//- 						.d-none.d-md-block
+//- 							.slider-text
+//- 								.slider-text__title твикс
+//- 								.slider-text__descr Это бестселлер! Любите конфетку с начинкой!!! Это чувство когда чувствуется сначала вкус сладкого шоколада плавно переходящий в начинку спелой вишни...эта программа с двумя красотками которые передадут вкус всех ваших изысков и желаний,лучшие техники и разнообразия позволят Вам насладиться вкусом который останется надолго.
+//- 						.d-block.d-md-none
+//- 							.slider-text
+//- 								.slider-text__title твикс
+//- 								.slider-text__descr Это бестселлер! Эта программа с двумя красотками, которые передадут вкус всех ваших изысков и желаний.
+//- 						img(src='img/programs/2.jpg', alt='program2')
+//- 				.row
+//- 					.col-md-12.col-lg-8.offset-lg-2.item
+//- 						.d-none.d-md-block
+//- 							.slider-text
+//- 								.slider-text__title персона lux
+//- 								.slider-text__descr Трудно выбрать конкретную программу? Хочется всего и сразу? Тогда программа «Персона LUX» удовлетворит все Ваши желания! В ней Вас ждет горячая эротическая смесь из всех эксклюзивных программ, которые выполняет выбранная Вами красотка. Только в этой программе самые лучшие, эксклюзивное, впечатляющие и невероятное, а техника релакса не оставит равнодушным даже самого требовательного Гостя!
+//- 						.d-block.d-md-none
+//- 							.slider-text
+//- 								.slider-text__title персона lux
+//- 								.slider-text__descr Трудно выбрать конкретную программу? Эта программа удовлетворит все Ваши желания! Горячая эротическая смесь из всех эксклюзивных программ. Не оставит равнодушным даже самого требовательного Гостя!
+//- 						img(src='img/programs/3.jpg', alt='program2')
+	//Лучшие мастера
+.section-image(style= "background-image: url(img/1067621573.jpg)")
+	.section-image__title
+		.title-2 Лучшие мастера
+	.section-image__padding
+.section-masters#masters
 	.container.text-center
-		.heading Лучшие мастера
-		.section#masters
-			.row
-				.col-md-4.col-lg-3
-					.master-item.js-parent.js-tilt.tilt(data-tilt-glare="true")
-						img(src="img/masters/1.jpg", alt="offer_1")
-						.content
-							.master-item__title Полина
-							.master-item__text Лет: 23, Рост:167, Вес:55, Грудь: 3
-				.col-md-4.col-lg-3
-					.master-item.js-parent.js-tilt.tilt(data-tilt-glare="true")
-						img(src="img/masters/2.jpg", alt="offer_1")
-						.content
-							.master-item__title Маша
-							.master-item__text Лет: 23, Рост:185, Вес:65, Грудь: 3
-				.col-md-4.col-lg-3
-					.master-item.js-parent.js-tilt.tilt(data-tilt-glare="true")
-						img(src="img/masters/3.jpg", alt="offer_1")
-						.content
-							.master-item__title Зарина
-							.master-item__text Лет: 21, Рост:156, Вес:43, Грудь: 3
-				.col-md-4.col-lg-3
-					.master-item.master-item--last.js-parent.js-tilt.tilt(data-tilt-glare="true")
-						img(src="img/masters/4.jpg", alt="offer_1")
-						.content
-							.master-item__title Ирина
-							.master-item__text Лет: 21, Рост:168, Вес:52, Грудь: 2
-	//- 		.card-deck.card-deck__masters
-	//- 				.card.js-tilt.tilt(data-tilt-glare="true")
-	//- 						.content__logo
-	//- 							img(src="img/g_sign.png", alt="")
-	//- 						img(class="card-img-top", src="img/masters/1.jpg", alt="offer_1")
-	//- 						.card-body.content
-	//- 								h5(class="card-title") Полина
-	//- 								p(class="card-text") Лет: 23, Рост:167, Вес:55, Грудь: 3
-	//- 				.card.js-tilt.tilt(data-tilt-glare="true")
-	//- 						.content__logo
-	//- 							img(src="img/g_sign.png", alt="")
-	//- 						img(class="card-img-top", src="img/masters/2.jpg", alt="offer_2")
-	//- 						.card-body.content
-	//- 								h5(class="card-title") Маша
-	//- 								p(class="card-text") Лет: 23, Рост:185, Вес:65, Грудь: 3
-	//- 				.card.js-tilt.tilt(data-tilt-glare="true")
-	//- 						.content__logo
-	//- 							img(src="img/g_sign.png", alt="")
-	//- 						img(class="card-img-top", src="img/masters/3.jpg", alt="offer_3")
-	//- 						.card-body.content
-	//- 								h5(class="card-title") Зарина
-	//- 								p(class="card-text") Лет: 21, Рост:156, Вес:43, Грудь: 3
-	//- 				.card.js-tilt.tilt(data-tilt-glare="true")
-	//- 						.content__logo
-	//- 							img(src="img/g_sign.png", alt="")
-	//- 						img(class="card-img-top", src="img/masters/4.jpg", alt="offer_3")
-	//- 						.card-body.content
-	//- 								h5(class="card-title") Ирина
-	//- 								p(class="card-text") Лет: 21, Рост:168, Вес:52, Грудь: 2
-	//Акции
+		.row
+			.col-md-4.col-lg-3
+				+master('Полина', 'img/masters/1.jpg', [23,167,55,3])
+			.col-md-4.col-lg-3
+				+master('Маша', 'img/masters/2.jpg', [23,185,65,3])
+			.col-md-4.col-lg-3
+				+master('Зарина', 'img/masters/3.jpg', [21,156,43,3])
+			.col-md-4.col-lg-3
+				+master('Ирина', 'img/masters/4.jpg', [21,168,52,2])
+.section-image(style= "background-image: url(img/-102894958.jpg)")
+	.section-image__title
+		.title-2 Наши акции
+	.section-image__padding
+//Акции
+.section-offers
 	.container.text-center
-			.heading Hаши акции
-			.row
-				.col-md-4.col-lg-4
-					.promo__item.js-parent.js-tilt
-							img(src="img/offer_1.jpg", alt="offer_1").promo-item__img
-				.col-md-4.col-lg-4
-					.promo__item.js-parent.js-tilt
-							img(src="img/offer_2.jpg", alt="offer_2").promo-item__img
-				.col-md-4.col-lg-4
-					.promo__item.js-parent.js-tilt
-							img(src="img/offer_3.jpg", alt="offer_3").promo-item__img
+		.row
+			.col-md-4.col-lg-4
+				.promo__item.js-parent.js-tilt
+						img(src="img/offer_1.jpg", alt="offer_1").promo-item__img
+			.col-md-4.col-lg-4
+				.promo__item.js-parent.js-tilt
+						img(src="img/offer_2.jpg", alt="offer_2").promo-item__img
+			.col-md-4.col-lg-4
+				.promo__item.js-parent.js-tilt
+						img(src="img/offer_3.jpg", alt="offer_3").promo-item__img
+.section-image(style= "background-image: url(img/-627637893.jpg)")
+	.section-image__title
+		.title-2 Ответы на наиболее частые вопросы
+	.section-image__padding
+.section-faq
 	.container
 		.faq#faq
-			.heading Ответы на наиболее частые вопросы
 			.faq-item.clearfix
 				.faq__text 
 					p(class="question") Как у вас можно выбрать девушку на сеанс эротического релакса?
@@ -177,29 +131,31 @@ body
 				.faq__text
 					p(class="question") В вашем салоне есть эротические игрушки?
 					p(class="answer") Да. Мы предлагаем самые разнообразные игрушки для Вашего удовольствия.
+include contacts
+include footer
 
-	include footer
+<!-- Optional JavaScript -->
 
-	<!-- Optional JavaScript -->
-	
-	//- --Yandex metrica
-	script(type='text/javascript', src='/js/yandex.js')
-	noscript
-		div
-			img(src='https://mc.yandex.ru/watch/48229025', style='position:absolute; left:-9999px;', alt='')
-	//- //Yandex metrica
-	
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	//- script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+//- --Yandex metrica
 
-	script(src='/libs/tilt.js-master/tilt.jquery.js')
-	script(src='/js/tilt.js')
-	script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js")
-	script(src="libs/owlcarousel2/owl.carousel.min.js")
+script(type='text/javascript', src='/js/yandex.js')
+noscript
+	div
+		img(src='https://mc.yandex.ru/watch/48229025', style='position:absolute; left:-9999px;', alt='')
+//- //Yandex metrica
 
-	<!-- My scripts -->
-	script(src='/js/navigation.js')
-	script(src='/js/main.js')
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuj0oRiNSueVLqpzRH38KhQFSAcmqvDPY&callback=initMap" type="text/javascript" async defer)
 
-	
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+script(src='libs/tilt.js-master/tilt.jquery.js')
+script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js")
+script(src="libs/owlcarousel2/owl.carousel.min.js")
+
+<!-- My scripts -->
+script(src='js/tilt.js')
+script(src='js/map.js')
+script(src='js/navigation.js')
+script(src='js/main.js')
+
+
+		

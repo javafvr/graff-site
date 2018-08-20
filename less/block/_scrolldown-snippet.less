@@ -29,14 +29,14 @@ p{
 }
 
 .scroll-down {
-  opacity: 1;
+  opacity: 0.8;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
 }
 
 .scroll-down {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 50%;
   margin-left: -16px;
   display: block;
@@ -45,7 +45,7 @@ p{
   border: 2px solid #FFF;
   background-size: 14px auto;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 0;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
   -webkit-transition: all .2s ease-in;
@@ -53,7 +53,9 @@ p{
   transform: scale(1);
   
   @media (min-width:992px){
-    display: none;
+    bottom: 50px;
+
+    //display: none;
   }
 }
 

@@ -1,0 +1,6 @@
+mixin master(name,url,params)
+	.master-item.js-parent.js-tilt.tilt(data-tilt-glare="true")
+		img(src=url, alt=name)
+		.content
+			.master-item__title #{name}
+			.master-item__text Лет: #{params[0]}, Рост: #{params[1]}, Вес: #{params[2]}, Грудь: #{params[3]}
