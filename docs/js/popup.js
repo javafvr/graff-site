@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$('body').css('overflow-y','hidden');
+	$('body').css('overflow-y','auto');
 	// if ( $.cookie("popup") == null ){
 	// 	$("#popup__overlay").show();
 	// }

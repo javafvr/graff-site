@@ -1,65 +1,96 @@
-.button{
-	position: relative;
-	display: block;
-	overflow: hidden;
-	width: 70px;
-	height: 70px;
-	z-index: 990;
-	cursor: pointer;
-	border: 3px solid #fff;
-	border-radius: 50px;
-	outline-width: 0px;
-	color: #FFF;
-	p{
-		font-size: 22px;
-		font-weight: 700;
-		text-transform: uppercase;
-		position: absolute;
-		display: none;
-		top: 15px;
-		left: 82px;
-		// transition: all 1200ms linear, text-shadow 1500ms linear;	
-	}
+// .button{
+// 	position: relative;
+// 	display: block;
+// 	overflow: hidden;
+// 	width: 70px;
+// 	height: 70px;
+// 	z-index: 990;
+// 	cursor: pointer;
+// 	border: 3px solid #fff;
+// 	border-radius: 50px;
+// 	outline-width: 0px;
+// 	color: #FFF;
+// 	p{
+// 		font-size: 22px;
+// 		font-weight: 700;
+// 		text-transform: uppercase;
+// 		position: absolute;
+// 		display: none;
+// 		top: 15px;
+// 		left: 82px;
+// 		// transition: all 1200ms linear, text-shadow 1500ms linear;	
+// 	}
 	
-	&:before{
-		content: "Да";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-55%);
-		text-transform: uppercase;
-		font-size: 22px;
-		font-weight: 700;
-	}	
+// 	&:before{
+// 		content: "Да";
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		transform: translate(-50%,-55%);
+// 		text-transform: uppercase;
+// 		font-size: 22px;
+// 		font-weight: 700;
+// 	}	
 
-	@media (min-width: 1200px) {
+// 	@media (min-width: 1200px) {
 
-		&:before{
-				display: inline;
-				position: absolute;
-				content:"";
-				background-image: url("../img/heart.png");
-				background-repeat: no-repeat;
-				// background-position: center;
-				-webkit-background-size: cover;
-						 -o-background-size: cover;
-								background-size: cover;
-						transform: translate(0,0);
+// 		&:before{
+// 				display: inline;
+// 				position: absolute;
+// 				content:"";
+// 				background-image: url("../img/heart.png");
+// 				background-repeat: no-repeat;
+// 				// background-position: center;
+// 				-webkit-background-size: cover;
+// 						 -o-background-size: cover;
+// 								background-size: cover;
+// 						transform: translate(0,0);
 				
-				height: 45px;
-				width: 60px;
-				top: 12px;
-				left: 7px;
-		}
-		&:hover{
-			width: 320px;
-			transition: all 200ms linear, text-shadow 500ms linear;
-			p{
-				display: inline-block;
-				text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
-			}
-		}
+// 				height: 45px;
+// 				width: 60px;
+// 				top: 12px;
+// 				left: 7px;
+// 		}
+// 		&:hover{
+// 			width: 320px;
+// 			transition: all 200ms linear, text-shadow 500ms linear;
+// 			p{
+// 				display: inline-block;
+// 				text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+// 			}
+// 		}
+// 	}
+// }
+
+
+.button{
+	text-decoration: none;
+	outline: none;
+	padding: 10px 30px;
+	margin: 10px 20px;
+	border: 2px solid #fff;
+	border-radius: 58px;
+	color: #fff;
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 18px;
+
+	&:hover{
+		background-color: @hoverColor;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  		text-decoration: none;
+		color: #FFF;
 	}
+}
+
+.button--small{
+	padding: 5px 30px;
+}
+
+.button--popup{
+	position: relative;
 }
 
 // ---------------------------------

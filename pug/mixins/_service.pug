@@ -1,0 +1,20 @@
+mixin service(title,url,params)
+	.service-card
+		.title-content
+			h3 #{title}
+			hr
+			if block 
+				block
+			else
+				No content provided
+		.card-info Подробнее...
+		.utility-info
+			ul.utility-list
+				li.comments #{params[0]} min
+					i(class="fa fa-clock-o")
+				li.date #{params[1]}
+					i(class="fa fa-rub")
+		.card__image
+			img(src=url, alt=title)
+		.gradient-overlay
+		.color-overlay
