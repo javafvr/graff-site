@@ -1,0 +1,83 @@
+doctype html
+html(lang="ru")
+	include ../_parts/_head.pug
+	body
+		include ../sections/hero-header.pug
+		include ../sections/best-services.pug
+
+		//- Лучшие мастера
+		include ../mixins/_master.pug
+		.section-image(style= "background-image: url(img/1067621573.jpg)")
+			.section-image__title
+				.title-2 Лучшие мастера
+			.section-image__padding
+		.section-masters#masters
+			.container.text-center.p-0
+				.row.no-gutters
+					.col-md-4.col-lg-3
+						+master('Полина', 'img/masters/1.jpg', [23,167,55,3])
+					.col-md-4.col-lg-3
+						+master('Маша', 'img/masters/2.jpg', [23,185,65,3])
+					.col-md-4.col-lg-3
+						+master('Зарина', 'img/masters/3.jpg', [21,156,43,3])
+					.col-md-4.col-lg-3
+						+master('Ирина', 'img/masters/4.jpg', [21,168,52,2])
+					.col-md-4.col-lg-3
+						+master('Патриция', 'img/masters/5.jpg', [24,170,55,2])
+					.col-md-4.col-lg-3
+						+master('Николь', 'img/masters/6.jpg', [20,165,45,2])
+					.col-md-4.col-lg-3
+						+master('Лейла', 'img/masters/7.jpg', [21,156,43,3])
+					.col-md-4.col-lg-3
+						+master('Вика', 'img/masters/8.jpg', [21,168,52,2])
+		.section-image(style= "background-image: url(img/-102894958.jpg)")
+			.section-image__title
+				.title-2 Наши акции
+			.section-image__padding
+		//Акции
+		.section-offers
+			.container.text-center
+				.row
+					.col-md-4.col-lg-4
+						.promo__item.js-parent.js-tilt
+								img(src="img/offer_1.jpg", alt="offer_1").promo-item__img
+					.col-md-4.col-lg-4
+						.promo__item.js-parent.js-tilt
+								img(src="img/offer_2.jpg", alt="offer_2").promo-item__img
+					.col-md-4.col-lg-4
+						.promo__item.js-parent.js-tilt
+								img(src="img/offer_3.jpg", alt="offer_3").promo-item__img
+		.section-image(style= "background-image: url(img/-627637893.jpg)")
+			.section-image__title
+				.title-2 Ответы на наиболее частые вопросы
+			.section-image__padding
+		include ../sections/faq
+		include ../sections/contacts
+		include ../sections/footer
+		include ../_parts/_adult_popup
+		<!-- Optional JavaScript -->
+		script(src="libs/jquery/jquery.min.js")
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js")
+
+		//- --Yandex metrica
+		script(src="js/popup.js")
+		script(src='js/yandex.js')
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/48229025', style='position:absolute; left:-9999px;', alt='')
+		//- //Yandex metrica
+
+		script(src='js/map.js')
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZu-u-JScSpPUiWZFE1SkQOthkDxWBD08&callback=initMap")
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		script(src='libs/tilt.js-master/tilt.jquery.js')
+		script(src="libs/owlcarousel2/owl.carousel.min.js")
+
+		<!-- My scripts -->
+		script(src='js/tilt.js')
+		script(src='js/navigation.js')
+		script(src='js/main.js')
+
+
+				
