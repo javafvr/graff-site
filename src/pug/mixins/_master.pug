@@ -1,0 +1,15 @@
+mixin master(name,url,params)
+	figure.master-item.color-overlay
+		img(src=url, alt='Фото ' + name)
+		figcaption
+			h2.master-item__title #{name}
+		.master-item__skills 
+			|Лет: 
+			span #{params[0]}, 
+			|Рост: 
+			span #{params[1]}, 
+			|Вес: 
+			span #{params[2]}, 
+			|Грудь: 
+			span #{params[3]}
+		a(href="#")
